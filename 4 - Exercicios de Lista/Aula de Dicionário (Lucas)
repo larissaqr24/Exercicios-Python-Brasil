@@ -1,0 +1,106 @@
+# Dicionarios
+# Sao mutaveis
+# Podem ter valores heterogeneos
+# Chaves sao unicas
+# Comandos sao bem parecidos com os da lista
+
+# Tem chave e valor
+# A chave que identifica o elemento(index)
+# Valor da chave e pode ser de diversos tipos (string, int, listas, dicionarios)
+
+
+dic = {'nome': 'Joao', 'idade': 28, 'genero': 'masculino'}
+print(dic)
+
+
+print(dic['nome'])
+print(dic.get('nome', 'Chave nao encontrada'))
+# Formas de verificar se um item esta no dicionario
+
+# Pela chave
+if 'nome1' in dic:
+    print(dic['nome'])
+else:
+    print('NAO ENCONTRADO')
+
+if dic.get('nome1') == None:
+    print('NAO ENCONTRADO')
+
+
+# Pelo valor
+if 'Joao' in dic.values():
+    print('encontrou')
+
+# Mostrar apenas os valores do dicionarios
+print(dic.values())
+
+# Mostrar apenas as keys do dicionario
+print(dic.keys())
+
+for x in dic.values():
+    print(x)
+
+
+for x in dic.keys():
+    print(f'Chave {x} e valor {dic[x]}')
+
+# A mais util
+print(dic.items())
+for x, valor in dic.items():
+    print(f'Chave {x} e valor {valor}')
+
+# Adicionar um valor no dicionario
+# CRIAR
+dic['estado_civil'] = 'casado'
+print(dic)
+
+# OU
+dic.update({'estado_civil': 'casado'})
+print(dic)
+dic.update({'idade': 30})
+print(dic)
+
+
+# Excluindo valores
+# Bem parecido com a lista
+del dic['estado_civil']
+print(dic)
+
+# ou para excluir e pegar o elemento excluido
+
+
+item_excluido = dic.pop('estado_civil')
+print(item_excluido)
+print(dic)
+
+# popitem - exclui o ultimo elemento do dicionario
+item_excluido = dic.popitem()
+print(item_excluido)
+print(dic)
+
+# Limpar o dicionario
+dic.clear()
+print(dic)
+
+# copiar um dicionario
+dic_copy = dic.copy()
+print(dic_copy)
+
+
+dic = {1: {'nome': 'Joao', 'idade': 28, 'genero': 'masculino'},
+       2: {'nome': 'Maria', 'idade': 20, 'genero': 'feminino'}}
+
+print(dic)
+print(dic[1]['nome'])
+print(dic[2]['nome'])
+
+dic[3] = {'nome': 'Patricia', 'idade': 30, 'genero': 'feminino'}
+print(dic)
+
+# Usando list comprehension
+valor = [dic[x][y] for x in dic for y in dic[x]]
+print(valor)
+
+for x in dic:
+    for y, valor in dic[x].items():
+        print(valor)

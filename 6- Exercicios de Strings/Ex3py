@@ -1,0 +1,12 @@
+'''Nome na vertical. Faça um programa que solicite o nome do usuário e imprima-o na vertical.'''
+
+#UTIIZANDO O WHILE:
+# nome = "Maria Silva"
+# i = 0
+# while i < len(nome):
+#     print(nome[i])
+#     i +=1
+
+nome = input('Digite seu nome: ')
+for x in range(len(nome)):
+   print(nome[x])  

@@ -1,0 +1,115 @@
+# Para mais conhecimento, ler a documentacao oficial do Python
+# https://docs.python.org/3/tutorial/datastructures.html
+
+Criar uma lista vazia
+# lista = []
+
+Criar uma lista com dados homogenios (iguais)
+# todos elementos sao do mesmo tipo
+# lista = [10, 20, 30]
+
+Criar uma lista com dados heterogenios (diferentes)
+# lista = [10, 20, 'lucas', 30]
+
+Criar lista dentro de lista
+# lista1 = [[10, 20, 30],
+#           ['lucas', 'lala', 'Ravi']]
+
+# print(lista1[1][2])
+
+Mostrar o tamanho da lista len()
+# print(len(lista))
+
+Procurar um valor dentro da lista
+# if 'lucas' in lista:
+#     print('existe')
+# else:
+#     print('nao existe')
+
+# lista_pesquisa = [10, 40]
+# for x in lista_pesquisa:
+#     if x in lista:
+#         print(f'{x} existe na lista')
+
+
+Juntar duas listas (extend ou operador +)
+# list_uf1 = ['SP', 'MG', 'RJ']
+# list_uf2 = ['SC', 'GO', 'BA']
+
+# print(list_uf1)
+# print(list_uf2)
+
+# lista_uf = list_uf1 + list_uf2
+
+# list_uf1.extend(list_uf2)
+# print(list_uf1)
+
+# print(lista_uf)
+
+
+Ordernar lista (sort)
+# lista = [20, 70, 10, 2]
+# print(lista)
+# lista.sort(reverse=True) ------(True: ordena em ordem decrescente)
+# print(lista)
+
+
+Maximo, Minino e somar os valores da lista (max, min e sum)
+# lista = [20, 70, 10, 2]
+# print(min(lista))
+# print(max(lista))
+# print(sum(lista))
+
+
+Adicionar um item no final da lista (append)
+# lista = ['lucas', 'lala', 'ravi']
+# print(lista)
+# lista.append('lele')
+# print(lista)
+
+Adicionar um item em alguma posicao da lista (insert)
+# lista = ['lucas', 'lala', 'ravi']
+# print(lista)
+# lista.insert(0, 'lele')
+# print(lista)
+
+Excluir um valor da lista e retornar o valor (pop)
+# lista = ['lucas', 'lala', 'ravi']
+# print(lista)
+# item_removido = lista.pop(0)
+# print(lista)
+# print(f'{item_removido} foi removido da lista')
+
+Excluir um item especifico da lista (remove)
+# lista = ['lucas', 'lala', 'ravi']
+
+# print(lista)
+# lista.remove('lucas')
+# print(lista)
+
+Copiar uma lista para outra
+# lista = ['tomate', 'cebola', 'cenoura']
+# print(lista)
+# list_temp = lista.copy()
+# print(list_temp)
+
+
+Limpar toda lista (clear)
+# lista = ['tomate', 'cebola', 'cenoura']
+# print(lista)
+# lista.clear()
+# print(lista)
+
+Contando o número de ocorrências de um objeto em uma lista: count()
+# lista = ['tomate', 'cebola', 'cenoura', 'alho', 'cebola']
+# print(lista)
+# print(lista.count('carne'))
+
+Imprimir uma lista (print ou print('SEPARADOR'.join(lista)))
+# lista = ['tomate', 'cebola', 'cenoura', 'alho']
+# print(lista)
+# print(';'.join(lista))
+
+Para imprimir uma listaa na ordem inversa a ordem lida.
+#Crie uma nova listaa para armazenar a lista inversa.
+# id_novalista = idade[:: -1] (usando fatiamento)

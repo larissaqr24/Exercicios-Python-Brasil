@@ -1,0 +1,9 @@
+'''Faça uma função que informe a quantidade de dígitos de um determinado número inteiro informado.'''
+
+def qtd_digitos(num):
+    resultado = len(str(num))
+    return resultado
+
+
+num = int(input('Informe um número: '))
+print(f'A quantidade de dígitos é: {qtd_digitos(num)}')
