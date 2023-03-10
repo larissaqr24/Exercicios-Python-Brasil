@@ -1,1 +1,2 @@
-# Exerc-cios-Python-Brasil
+Exercicios referente ao site Python Brasil. 
+https://python.org.br/
